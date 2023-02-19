@@ -37,7 +37,7 @@ html{
 }}
                     @media only screen and (max-width: 980px) {
                         .titledivider{
-                            height:400px;
+                            height:500px;
                             width:100%;
                             display:flex;
                             position:static;
