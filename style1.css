@@ -53,8 +53,8 @@ html{
         position:absolute;
         height: fit-content;
         width: 400px;
-        translate: 400px -20px;
-        align-self:center;
+        translate: 400px 0px;
+        align-self:flex-end;
         padding-bottom:500px;
     
         font-family: 'Vollkorn';
