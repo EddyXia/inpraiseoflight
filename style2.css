@@ -15,18 +15,19 @@ div{
 @media only screen and (min-width: 980px) {
 body{
     user-select: none;
-    animation:intro 3s forwards ease-in-out;
+    animation:intro 20s forwards ease-in-out;
     overflow-y:hidden;
 }}
                     @media only screen and (max-width: 980px) {
                         body{
                             user-select: none;
                             height:fit-content;
-                            animation:intro 3s forwards ease-in-out;
+                            animation:intro 20s forwards ease-in-out;
                             overflow-y:hidden;
                         }}
 html{
     scroll-behavior: smooth;
+    
 }
 /*=================== TITLE ===================*/
 @media only screen and (min-width: 980px) {
@@ -58,7 +59,7 @@ html{
     font-weight: 400;
     font-size: 60px;
     line-height: 84px;
-    text-align: center;
+    text-align: left;
     color:rgb(255, 255, 255);
     animation: unshadow 0.5s 2.5s forwards ;
 }}
@@ -75,7 +76,7 @@ html{
                             font-weight: 400;
                             font-size: 30px;
                             line-height: 84px;
-                            text-align: center;
+                            text-align: left;
                             text-shadow: 1px -1px rgb(0, 0, 0); 
                             color:rgb(255, 255, 255);
                             animation: unshadowm 0.5s 2.5s forwards ;
@@ -93,7 +94,7 @@ html{
     font-weight: 400;
     font-size: 60px;
     line-height: 84px;
-    text-align: center;
+    text-align: left;
     color: #000000;
     opacity:0;
     filter:blur(1px);
@@ -113,7 +114,7 @@ html{
                             font-weight: 400;
                             font-size: 30px;
                             line-height: 84px;
-                            text-align: center;
+                            text-align: left;
                             color: #000000;
                             opacity:0;
                             filter:blur(1px);
@@ -122,16 +123,19 @@ html{
 
 /*=================== Section 2 ===================*/
 @media only screen and (min-width: 980px) {
-.section2divider{
-    height:900px;
+.section2divider2{
+    height:200px;
     width:100%;
     display:flex;
     position:static;
     animation:intro 3s forwards ease-in-out;
     float:right;
+    background-color:white;
+    padding:10px;
+    z-index:1;
 }}
                     @media only screen and (max-width: 980px) {
-                        .section2divider{
+                        .section2divider2{
                             height:800px;
                             width:100%;
                             display:flex;
@@ -140,23 +144,9 @@ html{
                             float:right;
                         }}
 @media only screen and (min-width: 980px) {
-.section2divider{
-    height:900px;
-    width:100%;
-    display:flex;
-    position:static;
-}}
-                    @media only screen and (max-width: 980px) {
-                        .section2divider{
-                            height:800px;
-                            width:100%;
-                            display:flex;
-                            position:static;
-                        }}
-@media only screen and (min-width: 980px) {
-.s2text{
+.s2text2{
     position:absolute;
-    height: fit-content;
+    height: 200px;
     width: 400px;
     translate: 0px 0px;
     align-self:flex-end;
@@ -169,15 +159,21 @@ html{
     line-height: auto;
     text-align: left;
     color: #000000;
+    background-color:white;
+    padding:10px;
+    z-index:1;
+    border-radius: 15px;
+
+    text-decoration:underline dotted 2px;
+    
 }}
                     @media only screen and (max-width: 980px) {
-                        .s2text{
+                        .s2text2{
                             position:absolute;
                             height: fit-content;
                             width: 200px;
                             translate: 0px 0px;
                             align-self:flex-end;
-                            margin-left:55%;
                         
                             font-family: 'Vollkorn';
                             font-style: normal;
@@ -186,6 +182,11 @@ html{
                             line-height: auto;
                             text-align: left;
                             color: #000000;
+                            background-color:white;
+                            padding:10px;
+                            z-index:1;
+                            border-radius: 15px;
+                            text-decoration:underline dotted 2px;
                         }}
 @media only screen and (min-width: 980px) {
 .s2shadow{
@@ -235,7 +236,7 @@ html{
         width: 942px;
         height:400px;
         animation:intro 3s forwards ease-in-out;
-        translate: 100px -100px;
+        translate: 100px;
     
         font-family: 'Playfair Display SC';
         text-decoration:underline dotted 2px;
@@ -243,7 +244,7 @@ html{
         font-weight: 400;
         font-size: 150px;
         line-height: 150px;
-        text-align: left;
+        text-align: center;
         color: #FFB722;
     }}
                     @media only screen and (max-width: 980px) {
@@ -260,7 +261,7 @@ html{
                         font-weight: 400;
                         font-size: 50px;
                         line-height: 50px;
-                        text-align: left;
+                        text-align: center;
                         color: #FFB722;
                     }}
 @media only screen and (min-width: 980px) {
@@ -275,7 +276,7 @@ html{
     .lightglow{
         position: absolute;
         width: 942px;
-        translate: 100px -100px;
+        translate: 100px;
         height:400px;
     
         font-family: 'Playfair Display SC';
@@ -285,7 +286,7 @@ html{
         font-weight: 400;
         font-size: 150px;
         line-height: 150px;
-        text-align: left;
+        text-align: center;
     
         color: #ffb31a;
     
@@ -306,7 +307,7 @@ html{
                         font-weight: 400;
                         font-size: 50px;
                         line-height: 50px;
-                        text-align: left;
+                        text-align: center;
 
                         color: #ffb31a;
 
@@ -360,7 +361,7 @@ html{
         font-weight: 400;
         font-size: 25px;
         line-height: auto;
-        text-align: left;
+        text-align: center;
         color: #000000;
     }}
                         @media only screen and (max-width: 980px) {
@@ -377,7 +378,7 @@ html{
                                 font-weight: 400;
                                 font-size: 12px;
                                 line-height: auto;
-                                text-align: left;
+                                text-align: center;
                                 color: #000000;
                             }}
     @media only screen and (min-width: 980px) {
@@ -396,7 +397,7 @@ html{
         font-weight: 400;
         font-size: 25px;
         line-height: auto;
-        text-align: left;
+        text-align: center;
         color: #000000;
         opacity:0.25;
         filter:blur(1px);
@@ -417,7 +418,7 @@ html{
                                 font-weight: 400;
                                 font-size: 12px;
                                 line-height: auto;
-                                text-align: left;
+                                text-align: center;
                                 color: #000000;
                                 opacity:0.25;
                                 filter:blur(0.5px);
@@ -438,7 +439,7 @@ html{
     font-weight: 400;
     font-size: 150px;
     line-height: 150px;
-    text-align: left;
+    text-align: center;
     color: #FFB722;
 }}
                 @media only screen and (max-width: 980px) {
@@ -455,7 +456,7 @@ html{
                     font-weight: 400;
                     font-size: 50px;
                     line-height: 50px;
-                    text-align: left;
+                    text-align: center;
                     color: #FFB722;
                 }}
 @media only screen and (min-width: 980px) {
@@ -479,7 +480,7 @@ html{
     font-weight: 400;
     font-size: 150px;
     line-height: 150px;
-    text-align: left;
+    text-align: center;
 
     color: #ffb31a;
 
@@ -499,7 +500,7 @@ html{
                     font-weight: 400;
                     font-size: 50px;
                     line-height: 50px;
-                    text-align: left;
+                    text-align: center;
 
                     color: #ffb31a;
 
@@ -536,5 +537,7 @@ html{
 
 @keyframes intro {
     0%{opacity: 0; background-color:black;}
-    100%{opacity: 1; background-color:white;}
+    10%{opacity: 1; background-color:white;}
+    90%{opacity: 1; background-color:white;}
+    100%{opacity: 1; background-color:black;}
 }

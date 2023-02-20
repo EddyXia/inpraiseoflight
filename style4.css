@@ -15,70 +15,169 @@ div{
 @media only screen and (min-width: 980px) {
 body{
     user-select: none;
-    animation:intro 3s forwards ease-in-out;
+    animation:intro2 5s forwards ease-in-out;
+    height:90%;
     overflow-y:hidden;
 }}
                     @media only screen and (max-width: 980px) {
                         body{
                             user-select: none;
-                            height:fit-content;
-                            animation:intro 3s forwards ease-in-out;
+                            height:90%;
+                            animation:intro2 5s forwards ease-in-out;
                             overflow-y:hidden;
                         }}
 html{
     scroll-behavior: smooth;
+    
 }
 /*=================== TITLE ===================*/
 @media only screen and (min-width: 980px) {
-.titledivider{
-    height:500px;
+    .titledivider{
+        height:500px;
+        width:100%;
+        display:flex;
+        position:static;
+        animation:intro 3s forwards ease-in-out;
+        z-index:1;
+    }}
+                        @media only screen and (max-width: 980px) {
+                            .titledivider{
+                                height:400px;
+                                width:100%;
+                                display:flex;
+                                position:static;
+                                animation:intro 3s forwards ease-in-out;
+                            }}
+    @media only screen and (min-width: 980px) {
+    .title{
+        position:absolute;
+        height: fit-content;
+        width: 100%;
+        translate: -200px 0px;
+        align-self: flex-end;
+    
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 84px;
+        text-align: center;
+        color:rgb(255, 255, 255);
+        animation: unshadow 0.5s 2.5s forwards ;
+    }}
+                        @media only screen and (max-width: 980px) {
+                            .title{
+                                position:absolute;
+                                height: fit-content;
+                                width: 100%;
+                                translate: 0px 0px;
+                                align-self: flex-end;
+                            
+                                font-family: 'Playfair Display SC';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 84px;
+                                text-align: center;
+                                text-shadow: 1px -1px rgb(0, 0, 0); 
+                                color:rgb(255, 255, 255);
+                                animation: unshadowm 0.5s 2.5s forwards ;
+                            }}
+    @media only screen and (min-width: 980px) {
+    .titleshadow{
+        position:absolute;
+        height: fit-content;
+        width: 100%;
+        transform: scaleX(-1) rotate(180deg);
+        align-self: center;
+        
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 84px;
+        text-align: center;
+        color: #000000;
+        opacity:0;
+        filter:blur(1px);
+        animation: shadow 0.3s 2.5s forwards ease-in;
+    }}
+                        @media only screen and (max-width: 980px) {
+                            .titleshadow{
+                                position:absolute;
+                                height: fit-content;
+                                width: 100%;
+                                transform: scaleX(-1) rotate(180deg);
+                                translate: -350px 110px;
+                                align-self: center;
+                                
+                                font-family: 'Playfair Display SC';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 84px;
+                                text-align: center;
+                                color: #000000;
+                                opacity:0;
+                                filter:blur(1px);
+                                animation: shadowm 0.3s 2.5s forwards ease-in;
+                            }}
+    
+/*=================== TITLE ===================*/
+@media only screen and (min-width: 980px) {
+.titledivider2{
     width:100%;
+    margin:auto;
     display:flex;
     position:static;
     animation:intro 3s forwards ease-in-out;
+    margin: 0; height: 100%; overflow: hidden
 }}
                     @media only screen and (max-width: 980px) {
-                        .titledivider{
-                            height:400px;
+                        .titledivider2{
                             width:100%;
                             display:flex;
                             position:static;
                             animation:intro 3s forwards ease-in-out;
+                            margin: 0; height: 100%; overflow: hidden
                         }}
 @media only screen and (min-width: 980px) {
-.title{
-    position:absolute;
+.title2{
+    position:relative;
     height: fit-content;
-    width: 100%;
-    translate: -200px 0px;
-    align-self: flex-end;
+    width: 60%;
+    align-self: center;
+    translate:0px -100px;
+    margin:auto;
 
     font-family: 'Playfair Display SC';
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 84px;
+    font-size: 70px;
+    line-height: 100px;
     text-align: center;
-    color:rgb(255, 255, 255);
-    animation: unshadow 0.5s 2.5s forwards ;
+    color:rgb(65, 65, 65);
+    animation:intro 3s forwards ease-in-out;
+    text-decoration:underline dotted 2px;
 }}
                     @media only screen and (max-width: 980px) {
-                        .title{
-                            position:absolute;
+                        .title2{
+                            position:relative;
                             height: fit-content;
-                            width: 100%;
-                            translate: 0px 0px;
-                            align-self: flex-end;
+                            width: 60%;
+                            align-self: center;
+                            margin:auto;
                         
                             font-family: 'Playfair Display SC';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 30px;
-                            line-height: 84px;
+                            line-height: 44px;
+                            text-align: left;
                             text-align: center;
-                            text-shadow: 1px -1px rgb(0, 0, 0); 
-                            color:rgb(255, 255, 255);
-                            animation: unshadowm 0.5s 2.5s forwards ;
+                            color:rgb(65, 65, 65);
+                            animation:intro 3s forwards ease-in-out;
+                            text-decoration:underline dotted 2px;
                         }}
 @media only screen and (min-width: 980px) {
 .titleshadow{
@@ -93,7 +192,7 @@ html{
     font-weight: 400;
     font-size: 60px;
     line-height: 84px;
-    text-align: center;
+    text-align: left;
     color: #000000;
     opacity:0;
     filter:blur(1px);
@@ -113,7 +212,7 @@ html{
                             font-weight: 400;
                             font-size: 30px;
                             line-height: 84px;
-                            text-align: center;
+                            text-align: left;
                             color: #000000;
                             opacity:0;
                             filter:blur(1px);
@@ -122,41 +221,30 @@ html{
 
 /*=================== Section 2 ===================*/
 @media only screen and (min-width: 980px) {
-.section2divider{
-    height:900px;
+.section2divider2{
+    height:200px;
     width:100%;
     display:flex;
     position:static;
-    animation:intro 3s forwards ease-in-out;
+    animation:intro2 3s forwards ease-in-out;
     float:right;
+    background-color:white;
+    padding:10px;
+    z-index:1;
 }}
                     @media only screen and (max-width: 980px) {
-                        .section2divider{
+                        .section2divider2{
                             height:800px;
                             width:100%;
                             display:flex;
                             position:static;
-                            animation:intro 3s forwards ease-in-out;
+                            animation:intro2 3s forwards ease-in-out;
                             float:right;
                         }}
 @media only screen and (min-width: 980px) {
-.section2divider{
-    height:900px;
-    width:100%;
-    display:flex;
-    position:static;
-}}
-                    @media only screen and (max-width: 980px) {
-                        .section2divider{
-                            height:800px;
-                            width:100%;
-                            display:flex;
-                            position:static;
-                        }}
-@media only screen and (min-width: 980px) {
-.s2text{
+.s2text2{
     position:absolute;
-    height: fit-content;
+    height: 200px;
     width: 400px;
     translate: 0px 0px;
     align-self:flex-end;
@@ -169,15 +257,21 @@ html{
     line-height: auto;
     text-align: left;
     color: #000000;
+    background-color:white;
+    padding:10px;
+    z-index:1;
+    border-radius: 15px;
+
+    text-decoration:underline dotted 2px;
+    
 }}
                     @media only screen and (max-width: 980px) {
-                        .s2text{
+                        .s2text2{
                             position:absolute;
                             height: fit-content;
                             width: 200px;
                             translate: 0px 0px;
                             align-self:flex-end;
-                            margin-left:55%;
                         
                             font-family: 'Vollkorn';
                             font-style: normal;
@@ -186,6 +280,11 @@ html{
                             line-height: auto;
                             text-align: left;
                             color: #000000;
+                            background-color:white;
+                            padding:10px;
+                            z-index:1;
+                            border-radius: 15px;
+                            text-decoration:underline dotted 2px;
                         }}
 @media only screen and (min-width: 980px) {
 .s2shadow{
@@ -235,7 +334,7 @@ html{
         width: 942px;
         height:400px;
         animation:intro 3s forwards ease-in-out;
-        translate: 100px -100px;
+        translate: 100px;
     
         font-family: 'Playfair Display SC';
         text-decoration:underline dotted 2px;
@@ -243,7 +342,7 @@ html{
         font-weight: 400;
         font-size: 150px;
         line-height: 150px;
-        text-align: left;
+        text-align: center;
         color: #FFB722;
     }}
                     @media only screen and (max-width: 980px) {
@@ -260,7 +359,7 @@ html{
                         font-weight: 400;
                         font-size: 50px;
                         line-height: 50px;
-                        text-align: left;
+                        text-align: center;
                         color: #FFB722;
                     }}
 @media only screen and (min-width: 980px) {
@@ -275,7 +374,7 @@ html{
     .lightglow{
         position: absolute;
         width: 942px;
-        translate: 100px -100px;
+        translate: 100px;
         height:400px;
     
         font-family: 'Playfair Display SC';
@@ -285,7 +384,7 @@ html{
         font-weight: 400;
         font-size: 150px;
         line-height: 150px;
-        text-align: left;
+        text-align: center;
     
         color: #ffb31a;
     
@@ -306,7 +405,7 @@ html{
                         font-weight: 400;
                         font-size: 50px;
                         line-height: 50px;
-                        text-align: left;
+                        text-align: center;
 
                         color: #ffb31a;
 
@@ -360,7 +459,7 @@ html{
         font-weight: 400;
         font-size: 25px;
         line-height: auto;
-        text-align: left;
+        text-align: center;
         color: #000000;
     }}
                         @media only screen and (max-width: 980px) {
@@ -377,7 +476,7 @@ html{
                                 font-weight: 400;
                                 font-size: 12px;
                                 line-height: auto;
-                                text-align: left;
+                                text-align: center;
                                 color: #000000;
                             }}
     @media only screen and (min-width: 980px) {
@@ -396,7 +495,7 @@ html{
         font-weight: 400;
         font-size: 25px;
         line-height: auto;
-        text-align: left;
+        text-align: center;
         color: #000000;
         opacity:0.25;
         filter:blur(1px);
@@ -417,7 +516,7 @@ html{
                                 font-weight: 400;
                                 font-size: 12px;
                                 line-height: auto;
-                                text-align: left;
+                                text-align: center;
                                 color: #000000;
                                 opacity:0.25;
                                 filter:blur(0.5px);
@@ -433,12 +532,11 @@ html{
     left:25%;
 
     font-family: 'Playfair Display SC';
-    text-decoration:underline dotted 2px;
     font-style: normal;
     font-weight: 400;
     font-size: 150px;
     line-height: 150px;
-    text-align: left;
+    text-align: center;
     color: #FFB722;
 }}
                 @media only screen and (max-width: 980px) {
@@ -450,12 +548,11 @@ html{
                     left:15%;
 
                     font-family: 'Playfair Display SC';
-                    text-decoration:underline dotted 2px;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 50px;
                     line-height: 50px;
-                    text-align: left;
+                    text-align: center;
                     color: #FFB722;
                 }}
 @media only screen and (min-width: 980px) {
@@ -479,7 +576,7 @@ html{
     font-weight: 400;
     font-size: 150px;
     line-height: 150px;
-    text-align: left;
+    text-align: center;
 
     color: #ffb31a;
 
@@ -499,7 +596,7 @@ html{
                     font-weight: 400;
                     font-size: 50px;
                     line-height: 50px;
-                    text-align: left;
+                    text-align: center;
 
                     color: #ffb31a;
 
@@ -533,6 +630,11 @@ html{
                         100%{opacity: 0.3; translate: -350px 110px;}
                         0%{opacity: 0; translate: -355px 110px;}
                     }
+
+@keyframes intro2 {
+    0%{opacity: 0; background-color:black;}
+    100%{opacity: 1; background-color:white;}
+}
 
 @keyframes intro {
     0%{opacity: 0; background-color:black;}

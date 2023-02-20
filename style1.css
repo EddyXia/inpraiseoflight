@@ -1,0 +1,250 @@
+/*=================== Default Style ===================*/
+p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold';
+}
+a{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold';
+}
+
+div{
+    display:flex;
+    width:100%;
+
+    /*border: 0.5px dotted rgb(0,0,0,.5);*/
+}
+@media only screen and (min-width: 980px) {
+body{
+    user-select: none;
+    animation:intro 3s forwards ease-in-out;
+    overflow-y:hidden;
+}}
+                    @media only screen and (max-width: 980px) {
+                        body{
+                            user-select: none;
+                            height:fit-content;
+                            animation:intro 3s forwards ease-in-out;
+                            overflow-y:hidden;
+                        }}
+html{
+    scroll-behavior: smooth;
+}
+/*=================== Page 2 Section 1 ===================*/
+@media only screen and (min-width: 980px) {
+    .section2divider2{
+        height:1000px;
+        translate:0px 1000px;
+        width:100%;
+        display:flex;
+        position:absolute;
+        animation:intro 3s forwards ease-in-out;
+    }}
+                        @media only screen and (max-width: 980px) {
+                            .section2divider2{
+                                height:900px;
+                                translate:0px 1000px;
+                                width:100%;
+                                display:flex;
+                                position:absolute;
+                                animation:intro 3s forwards ease-in-out;
+                            }}
+
+    @media only screen and (min-width: 980px) {
+    .s2text2{
+        position:absolute;
+        height: fit-content;
+        width: 400px;
+        translate: 400px -20px;
+        align-self:center;
+        padding-bottom:500px;
+    
+        font-family: 'Vollkorn';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: auto;
+        text-align: left;
+        color: #000000;
+        text-decoration:underline dotted 2px;
+    }}
+                        @media only screen and (max-width: 980px) {
+                            .s2text2{
+                                position:absolute;
+                                height: fit-content;
+                                width: 200px;
+                                translate: 100px 0px;
+                                align-self:flex-end;
+                                padding-bottom:500px;
+                            
+                                font-family: 'Vollkorn';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: auto;
+                                text-align: left;
+                                color: #000000;
+                                text-decoration:underline dotted 2px;
+                            }}
+    @media only screen and (min-width: 980px) {
+    .s2shadow2{
+        position:absolute;
+        height: fit-content;
+        width: 400px;
+        translate: -670px -370px;
+        align-self:flex-end;
+        padding-bottom:500px;
+        transform: scaleX(-1) rotate(180deg);
+        float:right;
+    
+        font-family: 'Vollkorn', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: auto;
+        text-align: left;
+        color: #000000;
+        opacity:0.25;
+        filter:blur(1px);
+        text-decoration:underline dotted 2px;
+    }}
+                        @media only screen and (max-width: 980px) {
+                            .s2shadow2{
+                                position:absolute;
+                                height: fit-content;
+                                width: 200px;
+                                translate: -170px -440px;
+                                align-self:flex-end;
+                                padding-bottom:500px;
+                                transform: scaleX(-1) rotate(180deg);
+                                float:right;
+                            
+                                font-family: 'Vollkorn';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: auto;
+                                text-align: left;
+                                color: #000000;
+                                opacity:0.25;
+                                filter:blur(0.5px);
+                                text-decoration:underline dotted 2px;
+                            }}
+
+/*=================== Page 2 Section 2 ===================*/
+@media only screen and (min-width: 980px) {
+.light2{
+    position: absolute;
+    width: 942px;
+    height: 600px;
+    translate:0px 170px;
+    animation:intro 3s forwards ease-in-out;
+    left:25%;
+
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150px;
+    text-align: left;
+    color: #FFB722;
+    z-index:1
+}}
+                @media only screen and (max-width: 980px) {
+                .light2{
+                    position: absolute;
+                    width: 400px;
+                    height: 200px;
+                    translate:0px 170px;
+                    animation:intro 3s forwards ease-in-out;
+                    left:15%;
+
+                    font-family: 'Playfair Display SC';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 50px;
+                    text-align: left;
+                    color: #FFB722;
+                    z-index:1
+                }}
+@media only screen and (min-width: 980px) {
+.light2:hover{
+    color: #ffa600;
+}}
+                @media only screen and (max-width: 980px) {
+                .light2:hover{
+                    color: #ffa600;
+                }}
+@media only screen and (min-width: 980px) {
+.lightglow2{
+    position: absolute;
+    width: 942px;
+    height: 600px;
+    left:25%;
+    translate:0px 170px;
+
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150px;
+    text-align: left;
+
+    color: #ffb31a;
+    z-index:1;
+
+    filter: blur(10px);
+    animation: unglow 0.5s forwards;
+}}
+                @media only screen and (max-width: 980px) {
+                .lightglow2{
+                    position: absolute;
+                    width: 400px;
+                    height: 600px;
+                    left:15%;
+                    translate:0px 170px;
+
+                    font-family: 'Playfair Display SC';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 50px;
+                    text-align: left;
+
+                    color: #ffb31a;
+                    z-index:1;
+
+                    filter: blur(10px);
+                    animation: unglow 0.5s forwards;
+                }}
+
+/*=================== Animation ===================*/
+
+@keyframes glow{
+    0%{color: #FFAC00; filter: blur(10px);}
+    100%{color: #ffd900;filter: blur(20px);}
+}
+@keyframes unglow{
+    100%{color: #FFAC00; filter: blur(10px);}
+    0%{color: #ffd900;filter: blur(20px);}
+}
+@keyframes unshadow{
+    100%{text-shadow: 0px 0px rgb(0, 0, 0); color:black;}
+    0%{text-shadow: 2px -2px rgb(0, 0, 0); color:rgb(255, 255, 255);}
+}
+                    @keyframes unshadowm{
+                        100%{text-shadow: 0px 0px rgb(0, 0, 0); color:black;}
+                        0%{text-shadow: 1px -1px rgb(0, 0, 0); color:rgb(255, 255, 255);}
+                    }
+@keyframes shadow{
+    100%{opacity: 0.3; translate:-700px 120px}
+    0%{opacity: 0; translate:-705px 120px;}
+}
+                    @keyframes shadowm{
+                        100%{opacity: 0.3; translate: -350px 110px;}
+                        0%{opacity: 0; translate: -355px 110px;}
+                    }
+
+@keyframes intro {
+    0%{opacity: 0; background-color:black;}
+    100%{opacity: 1; background-color:white;}
+}

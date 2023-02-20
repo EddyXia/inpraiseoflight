@@ -59,8 +59,8 @@ html{
     font-size: 60px;
     line-height: 84px;
     text-align: center;
-    color:rgb(255, 255, 255);
-    animation: unshadow 0.5s 2.5s forwards ;
+    color:rgb(0, 0, 0);
+    animation: unshadow 0.5s 3s forwards ;
 }}
                     @media only screen and (max-width: 980px) {
                         .title{
@@ -76,9 +76,9 @@ html{
                             font-size: 30px;
                             line-height: 84px;
                             text-align: center;
-                            text-shadow: 1px -1px rgb(0, 0, 0); 
-                            color:rgb(255, 255, 255);
-                            animation: unshadowm 0.5s 2.5s forwards ;
+                            text-shadow: 1px -1px rgb(255, 255, 255); 
+                            color:rgb(0, 0, 0);
+                            animation: unshadowm 0.5s 3s forwards ;
                         }}
 @media only screen and (min-width: 980px) {
 .titleshadow{
@@ -94,10 +94,10 @@ html{
     font-size: 60px;
     line-height: 84px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     opacity:0;
     filter:blur(1px);
-    animation: shadow 0.3s 2.5s forwards ease-in;
+    animation: shadow 0.3s 3s forwards ease-in;
 }}
                     @media only screen and (max-width: 980px) {
                         .titleshadow{
@@ -114,10 +114,10 @@ html{
                             font-size: 30px;
                             line-height: 84px;
                             text-align: center;
-                            color: #000000;
+                            color: #ffffff;
                             opacity:0;
                             filter:blur(1px);
-                            animation: shadowm 0.3s 2.5s forwards ease-in;
+                            animation: shadowm 0.3s 3s forwards ease-in;
                         }}
 
 /*=================== Section 2 ===================*/
@@ -238,13 +238,14 @@ html{
         translate: 100px -100px;
     
         font-family: 'Playfair Display SC';
-        text-decoration:underline dotted 2px;
         font-style: normal;
         font-weight: 400;
         font-size: 150px;
         line-height: 150px;
         text-align: left;
-        color: #FFB722;
+        color: #e0e0e0;
+
+        opacity: 0.25;
     }}
                     @media only screen and (max-width: 980px) {
                     .light{
@@ -255,21 +256,22 @@ html{
                         translate: 100px -50px;
 
                         font-family: 'Playfair Display SC';
-                        text-decoration:underline dotted 2px;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 50px;
                         line-height: 50px;
                         text-align: left;
-                        color: #FFB722;
+                        color: #d3d3d3;
+
+                        opacity: 0.25;
                     }}
 @media only screen and (min-width: 980px) {
     .light:hover{
-        color: #ffa600;
+        color: #ac791a;
     }}
                     @media only screen and (max-width: 980px) {
                     .light:hover{
-                        color: #ffa600;
+                        color: #ac791a;
                     }}
 @media only screen and (min-width: 980px) {
     .lightglow{
@@ -287,7 +289,7 @@ html{
         line-height: 150px;
         text-align: left;
     
-        color: #ffb31a;
+        color: #ac791a;
     
         filter: blur(10px);
         animation: unglow 0.5s forwards;
@@ -308,7 +310,7 @@ html{
                         line-height: 50px;
                         text-align: left;
 
-                        color: #ffb31a;
+                        color: #ac791a;
 
                         filter: blur(10px);
                         animation: unglow 0.5s forwards;
@@ -518,12 +520,12 @@ html{
     0%{color: #ffd900;filter: blur(20px);}
 }
 @keyframes unshadow{
-    100%{text-shadow: 0px 0px rgb(0, 0, 0); color:black;}
-    0%{text-shadow: 2px -2px rgb(0, 0, 0); color:rgb(255, 255, 255);}
+    100%{text-shadow: 0px 0px rgb(0, 0, 0); color:rgb(255, 255, 255);opacity: 1;}
+    0%{text-shadow: 2px -2px rgb(0, 0, 0); color:black; opacity: 0;}
 }
                     @keyframes unshadowm{
-                        100%{text-shadow: 0px 0px rgb(0, 0, 0); color:black;}
-                        0%{text-shadow: 1px -1px rgb(0, 0, 0); color:rgb(255, 255, 255);}
+                        100%{text-shadow: 0px 0px rgb(0, 0, 0); color:rgb(255, 255, 255);opacity: 1;}
+                        0%{text-shadow: 1px -1px rgb(0, 0, 0); color:rgb(0, 0, 0);opacity: 0;}
                     }
 @keyframes shadow{
     100%{opacity: 0.3; translate:-700px 120px}
@@ -535,6 +537,6 @@ html{
                     }
 
 @keyframes intro {
-    0%{opacity: 0; background-color:black;}
-    100%{opacity: 1; background-color:white;}
+    100%{opacity: 1; background-color:black;}
+    0%{opacity: 0; background-color:white;}
 }
